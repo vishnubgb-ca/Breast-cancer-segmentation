@@ -24,7 +24,7 @@ def visualise_image():
     url_response = requests.get(url)
     with zipfile.ZipFile(BytesIO(url_response.content)) as z:
         z.extractall('.')
-    images = open_random_images(os.path.join(os.getcwd(),"Water_Bodies_Dataset_Split/train_images"))
+    images = open_random_images(os.path.join(os.getcwd(),"Dataset_BUSI_with_GT/train_images"))
     for i in range(4):
         image = Image.open(images[i])
         image.save('sample'+str(i)+'.jpg')
