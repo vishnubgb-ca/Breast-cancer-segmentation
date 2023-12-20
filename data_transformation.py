@@ -17,7 +17,7 @@ import os
 
 def transform_data():
     url = visualise_image()
-    ALL_CLASSES = ['background', 'waterbody']
+    ALL_CLASSES = ['background', 'tumor']
 
     label_map = [
         (0, 0, 0), # Background.
